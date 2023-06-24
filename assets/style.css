@@ -1,0 +1,573 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,200;1,500&display=swap');
+
+:root {
+    --bg-color: #53389E;
+    --primary-color: #BCA7EB;
+    --accent-color: #8258DE;
+    --text-color: #F5F1FE;
+    --button-color: #31205F;
+
+}
+
+body {
+    background-color: #53389E;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2px;
+    width: 95%;          /* Added this line */
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: .25px solid var(--primary-color);
+}
+
+.nav-and-button{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* optional, adjust this value to increase/decrease the space between the nav and the button */
+}
+
+
+.header-icon {
+    width: 30px;       /* Specify the width */
+    height: 30px;      /* Specify the height */
+    
+}
+
+.header-text{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header-buttons {
+    background-color: var(--accent-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+
+}
+
+.header .menu-ico,
+.header .close-ico {
+    display: none;
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header-navigation a{
+    text-decoration: none;
+    color: #F5F1FE;
+    font-size: 5px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.hero {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.hero-heading {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; /* Adjust this if needed; it sets the height of the hero-heading to the full height of the viewport */
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.hero-header {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 450;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.hero-subheader {
+    text-align: center;
+    font-size: 5px;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-top: 0px;
+}
+
+.hero-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.hero-diagram {
+    display: flex;
+    align-items: center;
+    max-width: 1306px;
+    max-height: 673px;
+    width: 80%;
+    height: 40%;
+    margin-bottom: 20px;
+}
+
+.services {
+    display: flex; /* This makes .services a flex container */
+    flex-direction: row; /* This makes .services display its children in a row */
+    align-items: flex-start; 
+    margin-bottom: 10px;
+    background: var(--primary-color);
+    max-width: 1220px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    border-radius: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.services-content-spread {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.services-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 190px;
+    max-height: 190px;
+    width: auto;
+    height: auto;
+
+}
+
+.services-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.services-right {
+    width:auto;
+    max-width: 105px;
+    margin-left: 15px;
+    max-height: 100px;
+}
+
+.services-left {
+    width:auto;
+    max-width: 90px;
+    max-height: 100px;
+}
+
+.services-header {
+    font-size: 12px;
+    font-weight: 450;
+    color: var(--bg-color);
+    margin-bottom: 5px;
+    border-bottom: .5px solid var(--bg-color);
+}
+
+.services-text-heading {
+    font-size: 8px;
+    font-weight: 450;
+    color: var(--bg-color);
+    margin-bottom: 5px;
+
+}
+
+.services-text-body {
+    font-size: 4.4px;
+    font-weight: 400;
+    color: var(--bg-color);
+    margin-bottom: 5px;
+    width: auto;
+}
+
+.services-icons {
+    color: var(--bg-color);
+}
+.custom-list {
+    list-style-type: none; /* This removes the default list markers */
+    padding-left: 0; /* This removes the default padding on the left side of lists */
+    padding-top: 0; /* Added to remove top padding */
+    margin-top: 0; /* Added to remove top margin */
+    max-height: 60px;
+}
+
+.custom-list li {
+    display: flex; /* This makes the list items display in a row */
+    align-items: center; /* This vertically centers the icon and text */
+    gap: 6px; /* This adds some space between the icon and the text */
+    max-height: 40px; /* Max height of each li */
+    max-width: 100%; /* Max width of each li */
+    width: auto;
+    font-size: 5px;
+    color: var(--bg-color);
+    margin-top:10px;
+}
+
+.packages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.packages-header{
+    font-size: 15px;
+    font-weight: 450;
+    color: white;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.packages-header-heading {
+    font-size: 25px;
+    font-weight: 450;
+    margin-bottom: 5px;
+}
+
+.packages-header-subheading {
+    max-width: 300px;
+    font-size: 6px;
+    font-weight: 200;
+    margin-bottom: 5px;
+}
+
+.packages-cards {
+    display: flex;
+    justify-content: space-between; /* Adjusts the spacing between cards */
+    flex-wrap: wrap; /* Allows the cards to wrap to the next line on smaller screens */
+}
+
+.packages-card {
+    background-color: var(--accent-color); /* Set your desired color */
+    width: auto; /* Adjusts card width, this assumes you want 4 cards in a row, adjust as needed */
+    max-height: 95px;
+    max-width: 80px;
+    color: white; /* Sets the text color, adjust as needed */
+    font-family: 'Montserrat', sans-serif; /* Sets the font, adjust as needed */
+    margin:3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content vertically */
+    justify-content: center; /* Centers the content horizontally */
+    padding: 20px; /* Adds some space inside each card */
+    box-sizing: border-box; /* Makes sure padding and border are included in the element's total width and height */
+    border-radius: 6px; /* Optional: adds rounded corners to the cards */
+}
+
+.packages-card-header i {
+    font-size: 34px; /* Add this line to adjust the icon size */
+    margin-bottom: 10px; 
+    margin-top:10px;
+    width: auto;
+    height: auto;
+}
+
+
+.packages-card-header-content {
+    min-width: 75px;
+    text-align: center;
+    font-size: 8px;
+}
+
+.packages-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    font-size: 6px;
+}
+
+.community {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.community-content {
+    display: flex;
+    justify-content: space-between; /* Adjusts space between left and right divs */
+    align-items: flex-start; /* Aligns items to the top of the div */
+    width: 100%; /* Makes the div take up full width of its parent */
+    margin: 0 10px; /* Adds 10px margin on left and right */
+}
+
+
+.community-left {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1; /* Add this */
+    margin-right: 20px; /* Add this to provide some space between the left and right divs */
+}
+
+.community-right {
+    flex: 2; /* Add this */
+    max-height: 100px;
+}
+
+.community-image {
+    max-width:140px;    
+}
+
+.community-heading {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 5px;
+    border-bottom: .5px solid var(--bg-color);
+}
+
+.community-body {
+    font-size:8px;
+    font-weight: 400;
+    color: var(--primary-color)
+}
+
+.community-button {
+    background-color: var(--button-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 15px;
+    margin-top: 5px;
+
+}
+
+.mobile {
+    display: flex; /* This makes .mobile a flex container */
+    flex-direction: row; /* This makes .mobile display its children in a row */
+    align-items: flex-start; 
+    margin-bottom: 10px;
+    max-width: 1000px;
+    max-height: 400px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    border-radius: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mobile-content-spread {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.mobile-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px;
+    max-height: 150px;
+    width: auto;
+    height: auto;
+    margin-left:0px;
+
+}
+
+.mobile-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    max-width: 1000px;
+}
+
+.mobile-left {
+    width:auto;
+    max-width: 150px;
+    margin-left: 15px;
+    max-height: 100px;
+    width:fit-content;
+}
+
+.mobile-right{
+    width:auto;
+    align-content: center;
+    justify-content: center;
+    max-width: 400px;
+    max-height: 70px;
+    margin-top: 45px;
+}
+
+.mobile-heading {
+    font-size: 14px;
+    font-weight: 425;
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
+
+}
+
+.mobile-body {
+    font-size: 5px;
+    font-weight: 400;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    width: auto;
+}
+
+.features-title {
+    color:white;
+    font-size: 6px;
+    font-weight:200;
+}
+
+.features-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the items horizontally */
+    gap: 8px;
+    max-height: 40px;
+    width: auto;
+    font-size: 6px;
+    color: white;
+}
+
+
+.features-icon{
+    display:flex;
+    font-size: 15px; /* Add this line to adjust the icon size */
+    justify-content: center;
+    align-items: center;
+    align-self:center;
+    width: auto;
+    height: auto;    
+
+}
+
+.features.item.text {
+    width:auto;
+    text-align: center;
+    align-self:center;
+    margin-left: 15px;
+}
+
+.mobile-button {
+    display:flex;
+    background-color: var(--accent-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 15px;
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+
+.mobile-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertically center content */
+    align-items: flex-start; /* align content to the left */
+    height: 100%; /* this will stretch the container to fill the parent height */
+}
+
+.features-list {
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 0;
+    margin-top: 0;
+    max-height: 60px;
+    margin-bottom: auto; /* this will push down the elements below */
+    margin-top: auto; /* this will push up the elements below */
+}
+
+.footer{
+    margin-top:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2px;
+    width: 95%;          /* Added this line */
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-and-button{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* optional, adjust this value to increase/decrease the space between the nav and the button */
+}
+
+
+.footer-icon {
+    width: 30px;       /* Specify the width */
+    height: 30px;      /* Specify the height */
+    
+}
+
+.footer-text{
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.footer-buttons {
+    background-color: var(--accent-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+
+}
+
+.footer .menu-ico,
+.footer .close-ico {
+    display: none;
+}
+
+.footer-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.footer-navigation a{
+    text-decoration: none;
+    color: #F5F1FE;
+    font-size: 5px;
+    font-weight: 400;
+    margin-left: 10px;
+}
