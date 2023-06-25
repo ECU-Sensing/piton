@@ -4,7 +4,7 @@
 
 # PITON - Platform for IoT Open Networks
 
-Welcome to the GitHub repository for PITON, the cutting-edge IoT platform designed with convenience, efficiency, and mobility in mind. 
+Welcome to the GitHub repository for the PITON site, the cutting-edge IoT platform designed with convenience, efficiency, and mobility in mind. 
 
 ## 🚀 Overview
 
