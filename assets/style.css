@@ -237,7 +237,7 @@ body {
 
 .packages-header{
     font-size: 15px;
-    font-weight: 450;
+    font-weight: 300;
     color: white;
     margin-bottom: 5px;
     text-align: center;
@@ -394,7 +394,7 @@ body {
     max-height: 150px;
     width: auto;
     height: auto;
-    margin-left:0px;
+    margin-left:3vw;
 
 }
 
@@ -488,8 +488,8 @@ body {
     border: none;
     border-radius: 4px;
     padding: 5px 15px;
-    margin-top: 5px;
-    margin-left: 30px;
+    margin-top: 2vw;
+    margin-left: 10vw;
     margin-bottom: 20px;
 }
 
@@ -633,7 +633,11 @@ body {
 .footer-extended-content {
     display: flex;
     justify-content: space-between; /* This makes sure there is space between "Privacy Policy" and "Terms of Use" */
-    width: 100%; /* This ensures the content takes up the full width of the parent .footer-extended div */
+    width: 100%; /* Thia {
+        text-decoration: none;
+        color: #000; /* Change the hex color code to any color you want */
+    }
+    s ensures the content takes up the full width of the parent .footer-extended div */
     margin: 10vw;
     margin-top: 0;
     margin-bottom: 0;
@@ -652,4 +656,9 @@ body {
 /* This removes the right margin from the last paragraph in the .footer-extended-right div to avoid unnecessary space on the far right */
 .footer-extended-right .footer-extended-text:last-child {
     margin-right: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000; /* Change the hex color code to any color you want */
 }

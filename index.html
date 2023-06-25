@@ -21,18 +21,18 @@
         </object>
         <div class="nav-and-button">
             <nav class="header-navigation">
-                <a href="#">Services</a>
-                <a href="#">Package Solutions</a>
-                <a href="#">Community</a>
-                <a href="#">Mobile</a>
+                <a href="#services">Services</a>
+                <a href="#packages">Package Solutions</a>
+                <a href="#community">Community</a>
+                <a href="#mobile">Mobile</a>
             </nav>
-        <button class="header-buttons">Contact Us</button>
+        <a class="header-buttons" href="mailto:admin@iotei.org">Contact Us</a>
         </div>
        <i class="fas fa-bars menu-ico"></i>
        <i class="fas fa-times close-ico"></i>  
 
     </header>
-    <div class="hero">
+    <div id="hero" class="hero">
         <div class="hero-heading">
             <h2 class="hero-header">Pioneering Cutting-Edge Sensing Networks</h2>
             <p class="hero-subheader">The Future of IoT, Simplified</p>
@@ -41,7 +41,7 @@
             <img class="hero-diagram" src="images/hero-diagram.png" alt="Diagram of the Piton system">
         </div>
     </div>
-    <div class="services">
+    <div id="services" class="services">
         <div id="services-illustration">
             <img class="services-image" src="images/services-image.png" alt="Scientist building robot illustration">
         </div>
@@ -77,7 +77,7 @@
         
 
     </div>
-    <div class="packages">
+    <div id="packages" class="packages">
         <div class="packages-header">
             <h4 class="packages-header-heading">Package Solutions</h3>
             <p class="packages-header-subheading">Collaborating with industry and academic pioneers, we develop, verify, and continually expand our expert-crafted packages for effortless deployment, usage, and maintenance</p>
@@ -116,14 +116,14 @@
                 </div>
         </div>
         <div class="packages-footer">
-            <p>Click Any To Contact Us And Learn More!</p>
+            <a href="mailto:admin@iotei.org"><p>Contact Us to Learn More!</p></a>
         </div>
     </div>
-    <div class="community">
+    <div id="community" class="community">
         <div class="community-content">
             <div class="community-left">
                 <img class="community-image" src="images/community-image.png">
-                <button class="community-button">Join the Community</button>
+                <a href="javascript: void(0)" onclick="window.open('https://campaign.ecu-noc.com/subscription/form','_blank','width=900,height=300');"><button class="community-button">Join the Community</button></a>
             </div>
             <div class="community-right">
                 <h3 class="community-heading">Be part of the PITON Community</h3>
@@ -133,7 +133,7 @@
             </div>
         </div>
     </div>
-    <div class="mobile">
+    <div id="mobile" class="mobile">
         <div class="mobile-content">
             <div class="mobile-left">
                 <h3 class="mobile-heading">Embrace Mobility with the Upcoming PITON App</h3>
@@ -156,7 +156,7 @@
             </div>
             <div class="mobile-right">
                 <img class="mobile-image" src="images/mobile-image.png">
-                <button class="mobile-button">Sign Up For Beta Access</button>
+                <a href="javascript: void(0)" onclick="window.open('https://campaign.ecu-noc.com/subscription/form','_blank','width=900,height=300');"><button class="mobile-button">Sign Up For Beta Access</button></a>
             </div>
         </div>
     </div>
@@ -169,10 +169,11 @@
                 <div class="footer-explore">
                     <h4 class="footer-navigation-title">Explore</h4>
                     <nav class="footer-navigation">
-                        <a href="#">Services</a>
-                        <a href="#">Package Solutions</a>
-                        <a href="#">Community</a>
-                        <a href="#">Mobile</a>
+                        <a href="#hero">Home</a>
+                        <a href="#services">Services</a>
+                        <a href="#packages">Package Solutions</a>
+                        <a href="#community">Community</a>
+                        <a href="#mobile">Mobile</a>
                     </nav>
                 </div>
                 <div class="footer-location">
@@ -183,7 +184,7 @@
                         </p>
                 </div>
             </div>
-        <button class="footer-buttons">Learn More</button>
+            <a href="javascript: void(0)" onclick="window.open('https://campaign.ecu-noc.com/subscription/form','_blank','width=900,height=300');"><button class="footer-buttons">Learn More</button></a>
     </footer>
     <div class="footer-extended">
         <div class="footer-extended-content">
