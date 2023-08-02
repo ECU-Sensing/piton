@@ -38,7 +38,12 @@
             <p class="hero-subheader">The Future of IoT, Simplified</p>
         </div>
         <div class="hero-content">
-            <img class="hero-diagram" src="images/hero-diagram.png" alt="Diagram of the Piton system">
+            <picture class="hero-diagram">
+                <source media="(max-width: 599px)" srcset="images/hero-diagram-mobile.png">
+                <source media="(min-width: 600px)" srcset="images/hero-diagram.png">
+                <img class="hero-diagram" src="images/hero-diagram.png" alt="Hero Diagram">
+            </picture>
+            
         </div>
     </div>
     <div id="services" class="services">
@@ -184,7 +189,7 @@
                         </p>
                 </div>
             </div>
-            <a href="javascript: void(0)" onclick="window.open('https://campaign.ecu-noc.com/subscription/form','_blank','width=900,height=300');"><button class="footer-buttons">Learn More</button></a>
+            <a class="footer-action" href="javascript: void(0)" onclick="window.open('https://campaign.ecu-noc.com/subscription/form','_blank','width=900,height=300');"><button class="footer-button">Learn More</button></a>
     </footer>
     <div class="footer-extended">
         <div class="footer-extended-content">

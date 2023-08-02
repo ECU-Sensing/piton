@@ -7,6 +7,8 @@
     --text-color: #F5F1FE;
     --button-color: #31205F;
 
+    --button-font-size: calc(.25rem + 1vw)
+
 }
 
 body {
@@ -47,11 +49,11 @@ body {
 .header-buttons {
     background-color: var(--accent-color);
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: calc(.25rem + 1vw);
     color: white;
     border: none;
     border-radius: 28px;
-    padding: 15px 24px;
+    padding: 2vh 3vw;
 
 }
 
@@ -69,10 +71,9 @@ body {
 .header-navigation a{
     text-decoration: none;
     color: #F5F1FE;
-    font-size: 20px;
+    font-size: calc(.25rem + 1vw);
     font-weight: 400;
-    margin-left: 10px;
-    letter-spacing: -0.145px;
+    margin-left: 1vw;
 
 }
 
@@ -81,7 +82,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 10vh;
 }
 
 .hero-heading {
@@ -90,24 +91,24 @@ body {
     flex-direction: column;
     align-items: center;
     height: auto; /* Adjust this if needed; it sets the height of the hero-heading to the full height of the viewport */
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
 }
 
 .hero-header {
     text-align: center;
-    font-size: 55px;
+    font-size: calc(1rem + 2vw);
     font-weight: 450;
     color: white;
-    margin-bottom: 5px;
+    margin-bottom: 1vh;
 }
 
 .hero-subheader {
     text-align: center;
-    font-size: 20px;
+    font-size: calc(.25rem + 1vw);
     font-weight: 400;
     color: var(--primary-color);
-    margin-top: 0px;
+    margin-top: none;
 }
 
 .hero-content{
@@ -122,14 +123,13 @@ body {
     align-items: center;
     width: 85%;
     height: 40%;
-    margin-bottom: 20px;
+    margin-bottom: 5vh;
 }
 
 .services {
     display: flex; /* This makes .services a flex container */
     flex-direction: row; /* This makes .services display its children in a row */
     align-items: flex-start; 
-    margin-bottom: 10px;
     background: var(--primary-color);
     margin:  5vh auto;
     border-radius: 2px;
@@ -149,7 +149,7 @@ body {
 .services-image{
     display: flex;
     width: 45vw;
-    height: 90vh;
+    height: auto;
     margin: 0 auto;
 
 }
@@ -174,27 +174,27 @@ body {
 
 .services-left {
     width:20vw;
+    align-items: center;
 }
 
 .services-header {
-    font-size: 60px;
+    font-size: calc(1rem + 2vw);
     font-weight: 450;
     color: var(--bg-color);
-    margin-bottom: 5px;
+    margin-bottom: 1vh;
     border-bottom: .5px solid var(--bg-color);
 }
 
 .services-text-heading {
-    font-size: 40px;
+    font-size: calc(.75rem + 1vw);
     font-weight: 450;
     color: var(--bg-color);
-    margin-bottom: 5px;
     margin-top: 2vh;
 
 }
 
 .services-text-body {
-    font-size: 15px;
+    font-size: calc(.25rem + .75vw);
     font-weight: 400;
     color: var(--bg-color);
     margin-bottom: 5px;
@@ -215,44 +215,39 @@ body {
     align-items: center; /* This vertically centers the icon and text */
     gap: 2vw; /* This adds some space between the icon and the text */
     width: auto;
-    font-size: 20px;
+    font-size: calc(.25rem + 1vw);
     color: var(--bg-color);
     margin-top: 3vh;
 }
 
 .services-icon {
     color: var(--bg-color);
-    font-size: 30px;
+    font-size: calc(.5rem + 1vw);
 }
 
 .packages {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10px;
-    margin-top: 10px;
     font-family: 'Montserrat', sans-serif;
 }
 
 .packages-header{
-    font-size: 15px;
     font-weight: 300;
     color: white;
-    margin-bottom: 5px;
     text-align: center;
 }
 
 .packages-header-heading {
-    font-size: 75px;
+    font-size: calc(1rem + 2vw);
     font-weight: 400;
-    margin-bottom: 5px;
+    margin-bottom: .5vh;
 }
 
 .packages-header-subheading {
     max-width: 50vw;
-    font-size: 15px;
+    font-size: calc(.75rem + .25vw);
     font-weight: 200;
-    margin-bottom: 5px;
 }
 
 .packages-cards {
@@ -278,7 +273,7 @@ body {
 }
 
 .packages-card-header i {
-    font-size: 75px; /* Add this line to adjust the icon size */
+    font-size: calc(3rem + 2vw); /* Add this line to adjust the icon size */
     margin-bottom: 2vh; 
     margin-top:5vh;
     width: auto;
@@ -289,23 +284,22 @@ body {
 .packages-card-header-content {
     min-width: 75px;
     text-align: center;
-    font-size: 35px;
+    font-size: calc(1rem + 1vw);
 }
 
 .packages-footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
     color: var(--primary-color);
-    font-size: 25px;
+    font-size: calc(.5rem + 1vw);
 }
 
 .community {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: flex-end;
     margin-bottom: 5vh;
     margin-top: 5vh;
     font-family: 'Montserrat', sans-serif;
@@ -314,16 +308,13 @@ body {
 .community-content {
     display: flex;
     justify-content: space-between; /* Adjusts space between left and right divs */
-    align-items: flex-start; /* Aligns items to the top of the div */
-    width: 100%; /* Makes the div take up full width of its parent */
-    margin: 0 10px; /* Adds 10px margin on left and right */
+    align-items: center; /* Aligns items to the top of the div */
 }
 
 
 .community-left {
     display:flex;
     flex-direction: column;
-    align-items: center;
     margin-left: 10vw;
 }
 
@@ -334,19 +325,19 @@ body {
 }
 
 .community-image {
-    width: 100%;    
+    width: 100%;
+    height: auto;    
 }
 
 .community-heading {
-    font-size: 55px;
+    font-size: calc(1rem + 2vw);
     font-weight: 400;
     color: white;
-    margin-bottom: 5px;
     border-bottom: .5px solid var(--bg-color);
 }
 
 .community-body {
-    font-size:25px;
+    font-size: calc(.75rem + .75vw);
     font-weight: 400;
     color: var(--primary-color)
 }
@@ -354,11 +345,11 @@ body {
 .community-button {
     background-color: var(--button-color);
     font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
+    font-size: calc(.75rem + 1vw);
     color: white;
     border: none;
     border-radius: 4px;
-    padding: 15px 50px;
+    padding: 2vh 2vw;
     margin-top: 3vw;
     align-content: center
 
@@ -370,21 +361,17 @@ body {
     align-items: flex-start; 
     border-radius: 2px;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 15vh;
+    min-height: 100%;
 }
 
-.mobile-content-spread {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-}
 
 .mobile-image{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 37vw;
-    height: 78vh;
+    width: 100%;
+    height: auto;
     margin-left:3vw;
 
 }
@@ -392,15 +379,15 @@ body {
 .mobile-content {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     margin-left: 5vw;
     margin-right: 5vw;
 
 }
 
 .mobile-left {
-    margin-left: 15px;
-    width: 45vw;
+    margin-left: 2vw;
+    width: 35vw;
 }
 
 .mobile-right{
@@ -409,41 +396,45 @@ body {
     width: 45vw;
     align-items: center;
     justify-content: center;
-    margin-top: 45px;
     margin-left: 5vw;
 }
 
 .mobile-heading {
-    font-size: 50px;
+    font-size:calc(1rem + 2vw);
     font-weight: 425;
     text-align: center;
     color: white;
-    margin-bottom: 5px;
 
 }
 
 .mobile-body {
-    font-size: 20px;
+    font-size: calc(.75rem + .75vw);
     font-weight: 400;
     color: var(--primary-color);
-    margin-bottom: 5px;
     width: auto;
 }
 
 .features-title {
     color:white;
-    font-size: 25px;
+    font-size: calc(1rem + .75vw);
     font-weight:200;
+}
+
+.features-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2vh;
 }
 
 .features-list li {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centers the items horizontally */
+    justify-content: flex-start; /* Centers the items horizontally */
     gap: 5vh;
-    max-height: 40px;
-    width: 80%;
-    font-size: 6px;
+    max-height: 75px;
+    width: auto;
+    font-size: calc(1rem + .5vw);
     color: white;
     margin-bottom: 5vh;
     margin-top: 2vh;
@@ -452,7 +443,7 @@ body {
 
 .features-icon{
     display:flex;
-    font-size: 60px; /* Add this line to adjust the icon size */
+    font-size: calc(2rem + 2vw); /* Add this line to adjust the icon size */
     justify-content: center;
     align-items: center;
     align-self:center;
@@ -462,7 +453,8 @@ body {
 }
 
 .features-item-text {
-    font-size: 25px;
+    font-size: calc(.75rem + .75vw);
+    height: auto;
     width:auto;
     text-align: center;
     align-self:center;
@@ -473,13 +465,11 @@ body {
     display:flex;
     background-color: var(--accent-color);
     font-family: 'Montserrat', sans-serif;
-    font-size: 25px;
+    font-size: calc(.75rem + .75vw);
     color: white;
     border: none;
     border-radius: 15px;
-    padding: 25px 65px;
-    margin-top: 2vw;
-    margin-bottom: 5vh;
+    padding: 2vh 4vw;
 }
 
 
@@ -491,22 +481,12 @@ body {
     height: 100%; /* this will stretch the container to fill the parent height */
 }
 
-.features-list {
-    list-style-type: none;
-    padding-left: 0;
-    padding-top: 0;
-    margin-top: 0;
-    max-height: 60px;
-    margin-bottom: auto; /* this will push down the elements below */
-    margin-top: auto; /* this will push up the elements below */
-}
+
 
 .footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: auto;          
-    height: auto;
     font-family: 'Montserrat', sans-serif;
     background-color: var(--button-color);
     margin-top: 15vh;
@@ -516,7 +496,7 @@ body {
 
 .footer-icon {
     width: 20vw;
-    height: 30vh;
+    height: auto;
     margin-left: 2vw;
     margin-right: 15vw;
 }
@@ -527,15 +507,15 @@ body {
     align-items: center;
 }
 
-.footer-buttons {
+.footer-button {
     background-color: var(--accent-color);
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: calc(.75rem + .75vw);
     color: white;
     border: none;
     border-radius: 10px;
-    padding: 10px 24px;
-    margin-right: 20px;
+    padding: 1vh 2vw;
+    margin-right: 2vw;
 
 }
 
@@ -555,14 +535,14 @@ body {
 .footer-navigation a{
     text-decoration: none;
     color: #F5F1FE;
-    font-size: 15px;
+    font-size: calc(.75rem + .25vw);
     font-weight: 500;
     margin-left: 10px;
 }
 
 .footer-navigation-title {
     color: #F5F1FE;
-    font-size: 22px;
+    font-size:  calc(.75rem + .75vw);
     font-weight: 450;
     margin-left: 10px;
     align-content: left;
@@ -579,7 +559,7 @@ body {
 
 .footer-location-title {
     color: #F5F1FE;
-    font-size: 20px;
+    font-size: calc(.75rem + .75vw);
     font-weight: 400;
     align-content: left;
     margin-bottom: 5px;
@@ -587,7 +567,7 @@ body {
 
 .footer-location-text {
     color: #F5F1FE;
-    font-size: 15px;
+    font-size: calc(.75rem + .25vw);
     font-weight: 400;
 }
 
@@ -632,7 +612,7 @@ body {
 }
 
 .footer-extended-text {
-    font-size: 14px; /* This will make the text smaller. Adjust the pixel value as needed. */
+    font-size: calc(.5rem + .25vw); /* This will make the text smaller. Adjust the pixel value as needed. */
     margin-right: 5vw; /* Adds some space to the right of each paragraph. Remove or adjust as needed. */
     margin-left: 5vw;
     color: var(--primary-color);
@@ -642,3 +622,223 @@ a {
     text-decoration: none;
     color: var(--primary-color); /* Change the hex color code to any color you want */
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* CSS rules for extra small devices */
+
+    .header {
+        justify-content: center;
+    }
+
+    .header-icon {
+        width: 50%;
+        height: auto;
+    }
+    .nav-and-button {
+        display: none;
+    }
+
+    .hero-diagram{
+        width: 80vw;
+        height: auto;
+    }
+
+    .services{
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;
+        width: 100%;
+    }
+
+    .services-header{
+        width: 85%;
+        text-align: center;
+    }
+
+    .services-content-spread > * {
+        text-align: center;
+    }
+
+    .services-image {
+        width: 80vw;
+    }
+
+    .services-content {
+        align-items: center;
+    }
+
+    .services-content-spread{
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;
+        width: 100%;
+    }
+    
+    .services-left{
+        width: 80%;
+    }
+
+    .services-right{
+        width: 80%;
+    }
+
+    .custom-list {
+        text-align: center;
+    }
+
+    .custom-list li {
+        margin-top: 1vh;
+        
+    }
+    .packages-header-subheading {
+        text-align: center;
+        max-width: none;
+        width: 80vw;
+    }
+
+    .packages-cards {
+        flex-direction: column;
+        width: 90vw;
+        align-items: center;
+    }
+    .packages-card {
+        width: 80vw;
+    }
+
+    .community-content{
+        flex-direction: column;
+        width: 90vw;
+        align-items: center;
+        gap: 5vh;
+    }
+    
+    .community-left{
+        align-items: center;
+    }
+    
+    .community-right {
+        align-items: center;
+        width: 90vw;
+    }
+
+    .community-right > * {
+        text-align: center;
+    }
+
+    .community-image {
+        width: 60vw;
+    }
+
+    .mobile-content{
+        flex-direction: column;
+        gap: 4vh;
+        align-items: center;
+        width: 100%;
+    }
+
+    .mobile-left{
+        width: 70%
+    }
+
+    .mobile-left > * {
+        text-align: center;
+    }
+
+    .mobile-right {
+        width: 70%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+
+    .footer-action {
+        width: 50%;
+        margin-bottom: 2vh;
+    }
+
+    .footer-icon {
+        width: 70%;
+        margin: 0 0;
+    }
+
+    .footer-button {
+        width: 100%;
+        margin-top: 3vh;
+        margin-right: 0;
+    }
+
+    .nav-and-nav {
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        gap: 2vh;
+    }
+
+    .nav-and-nav > * {
+        text-align: center;
+        width: 80%;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    /* CSS rules for small devices */
+    .services{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-content{
+        align-items: center;
+    }
+
+    .packages-card {
+        margin: 2.5vw;  /* or any suitable margin */
+        padding: 1vw;
+        width: 45vw;  /* or any suitable padding */
+    }
+
+    .mobile-content{
+        flex-direction: column;
+        gap: 4vh;
+        align-items: center;
+        width: 100%;
+    }
+
+    .mobile-left{
+        width: 70%
+    }
+    
+    .mobile-right {
+        width: 70%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* CSS rules for medium devices */
+    .packages-card {
+        margin: 2vw;  /* or any suitable margin */
+        padding: 1vw;
+        width: 45vw;  /* or any suitable padding */
+    }
+    
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    /* CSS rules for large devices */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    /* CSS rules for extra large devices */
+}
+
