@@ -33,4 +33,4 @@ If you have any feedback or issues, please open a GitHub issue in this repositor
 
 ## 📃 License
 
-This project is licensed under the [MIT License](#). (Add link to license)
+More information to follow
