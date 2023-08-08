@@ -32,6 +32,10 @@ body {
     gap: 5vw; /* optional, adjust this value to increase/decrease the space between the nav and the button */
 }
 
+.side-menu {
+    display: none;
+}
+
 
 .header-icon {
     width: 10vw;       /* Specify the width */
@@ -679,16 +683,52 @@ a {
     /* CSS rules for extra small devices */
 
     .header {
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .header-icon {
-        width: 50%;
+        width: 30%;
         height: auto;
     }
 
+    .side-menu {
+        display: block;
+        font-size: calc(1rem + 1vw);
+        color: white;
+        cursor: pointer;
+        margin-left: 50vw;
+    }
     
-    .nav-and-button {
+    .header-navigation {
+        flex-direction: column;
+        position: fixed;
+        background-color: #31205F;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        display: none;
+        
+    }
+
+    .header-navigation a{
+        font-size: calc(1rem + 1vh);
+        display: block;
+        text-align: center;
+        margin: 5vw 0;
+    }
+
+    body.no-scroll {
+        overflow: hidden;
+    }
+
+    .close-icon{
+        font-size: calc(2rem + 5vh);
+        margin-bottom: 5vh;
+    }
+
+    .header-buttons{
         display: none;
     }
 
@@ -983,9 +1023,6 @@ a {
 @media only screen and (max-width: 768px) {
     /* CSS rules for medium devices */
 
-    .header-navigation a {
-        font-size: 0.9rem;
-    }
     .hero-diagram {
         width: 90vw;
         margin-bottom: none;

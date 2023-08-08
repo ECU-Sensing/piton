@@ -20,17 +20,19 @@
             <!-- Fallback content goes here -->
             <img src="images/piton-white.jpg" alt="Description of image">
         </object>
+        <div class="side-menu">
+            <i onclick="toggleMenu('block')" class="fa fa-bars"></i>
+        </div>
         <div class="nav-and-button">
-            <nav class="header-navigation">
-                <a href="#services">Services</a>
-                <a href="#packages">Package Solutions</a>
-                <a href="#community">Community</a>
-                <a href="#mobile">Mobile</a>
+            <nav id="header_navigation" class="header-navigation">
+                <a onclick="toggleMenu('none')" class="fa fa-circle-xmark close-icon"></a>
+                <a href="#services" onclick="navigateAndCloseMenu(this)">Services</a>
+                <a href="#packages" onclick="navigateAndCloseMenu(this)">Package Solutions</a>
+                <a href="#community" onclick="navigateAndCloseMenu(this)">Community</a>
+                <a href="#mobile" onclick="navigateAndCloseMenu(this)">Mobile</a>
             </nav>
         <a class="header-buttons" href="mailto:admin@iotei.org">Contact Us</a>
         </div>
-       <i class="fas fa-bars menu-ico"></i>
-       <i class="fas fa-times close-ico"></i>  
 
     </header>
     <div id="hero" class="hero">
