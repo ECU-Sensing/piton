@@ -11,11 +11,20 @@ function toggleMenu(displayState) {
 }
 
 function navigateAndCloseMenu(linkElement) {
-    // Close the side menu
-    toggleMenu('none');
+    const targetID = linkElement.getAttribute('href').substr(1);
+    const targetElement = document.getElementById(targetID);
 
-    // Navigate to the desired section after a slight delay
-    setTimeout(() => {
-        window.location.href = linkElement.href;
-    }, 100);
+    if (window.innerWidth <= 600) {
+        // Close the side menu only for smaller screens
+        toggleMenu('none');
+        
+        // Navigate to the desired section after a slight delay for smaller screens
+        setTimeout(() => {
+            window.location.href = linkElement.href;
+        }, 100);
+    } else {
+        // Smoothly scroll to the target element for screens larger than 600px
+        targetElement.scrollIntoView();
+    }
 }
+
