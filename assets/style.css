@@ -122,9 +122,46 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 85%;
+    width: 95%;
     height: 40%;
-    margin-bottom: 5vh;
+}
+
+.scope{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10vh;
+}
+
+.scope-header {
+    font-size: calc(2rem + 1.5vw);
+    font-weight: 450;
+    color: var(--primary-color);
+    margin-bottom: 4vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.scope-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5vw;
+}
+
+.scope-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    border: var(--primary-color) 4px solid;
+    border-radius: 15px;
+    padding: 2vh  2vw;
+}
+
+.scope-item > * {
+    font-size: calc(2rem + .5vw);
+    color: var(--primary-color);
+    margin: 0 0 0 0;
 }
 
 .services {
@@ -156,7 +193,11 @@ body {
 }
 
 .services-illustration {
-    width: fit-content
+    width: fit-content;
+    height: 100%;
+    align-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .services-content {
@@ -187,10 +228,11 @@ body {
 }
 
 .services-text-heading {
-    font-size: calc(.75rem + 1vw);
+    font-size: calc(1rem + 1.5vw);
     font-weight: 450;
     color: var(--bg-color);
     margin-top: 2vh;
+    margin-bottom: 1vh;
 
 }
 
@@ -432,7 +474,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start; /* Centers the items horizontally */
-    gap: 5vh;
+    gap: 5vw;
     max-height: 75px;
     width: auto;
     font-size: calc(1rem + .5vw);
@@ -460,6 +502,14 @@ body {
     text-align: center;
     align-self:center;
     margin-left: 15px;
+}
+
+.mobile-features-small {
+    display: none;
+}
+
+.mobile-features-small ul {
+    padding: 0;
 }
 
 .mobile-button {
@@ -636,6 +686,8 @@ a {
         width: 50%;
         height: auto;
     }
+
+    
     .nav-and-button {
         display: none;
     }
@@ -643,6 +695,7 @@ a {
     .hero-diagram{
         width: 80vw;
         height: auto;
+        margin-bottom: 5vh;
     }
 
     .hero {
@@ -655,6 +708,28 @@ a {
 
     .hero-subheader {
         font-size: 1rem;
+    }
+
+    .scope-header{
+        font-size: calc(1rem + 2vw);
+    }
+
+    .scope-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+
+    .scope-item {
+        border: var(--primary-color) 2px solid;
+        width: 100%;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .scope-item > * {
+        font-size: calc(1rem + 2vw);
+        text-align: center;
     }
 
     .services{
@@ -709,8 +784,9 @@ a {
     }
     
     .services-icon {
-        font-size: calc(1rem + .25vw);
+        font-size: calc(1rem + 5vw);
     }
+    
     .packages-header-subheading {
         text-align: center;
         max-width: none;
@@ -721,9 +797,11 @@ a {
         flex-direction: column;
         width: 90vw;
         align-items: center;
+        gap: 2vh;
     }
     .packages-card {
-        width: 80vw;
+        width: 80%;
+        margin: 0;
     }
 
     .community-content{
@@ -771,6 +849,11 @@ a {
 
     .mobile-features {
         display: none;
+    }
+
+    .mobile-features-small {
+        display: block;
+        width: 80vw;
     }
 
     .footer {
@@ -825,8 +908,32 @@ a {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 767px) {
     /* CSS rules for small devices */
+
+    .hero-diagram{
+        width: 85vw;
+        height: auto;
+        margin-bottom: 5vh;
+    }
+
+    .scope-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+    }
+
+    .scope-item {
+        width: 80%;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    .scope-item > * {
+        font-size: calc(1rem + 10vw);
+        text-align: center;
+    }
+
     .services{
         flex-direction: column;
         align-items: center;
@@ -852,10 +959,24 @@ a {
     .mobile-left{
         width: 70%
     }
-    
+
+    .mobile-left > * {
+        text-align: center;
+    }
+
     .mobile-right {
         width: 70%;
     }
+
+    .mobile-features {
+        display: none;
+    }
+
+    .mobile-features-small {
+        display: block;
+    }
+
+    
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -868,6 +989,19 @@ a {
     .hero-diagram {
         width: 90vw;
         margin-bottom: none;
+    }
+
+    .scope-header {
+        font-size: calc(1rem + 1vw);
+    }
+
+    .scope-item {
+        border: var(--primary-color) 2px solid;
+
+    }
+
+    .scope-item > * {
+        font-size: calc(1rem + 1vw);
     }
 
     .packages-card {
