@@ -81,6 +81,10 @@ body {
 
 }
 
+.close-icon {
+    display:none;
+}
+
 .hero {
     font-family: 'Montserrat', sans-serif;
     display: flex;
