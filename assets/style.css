@@ -286,6 +286,7 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
+    justify-content: center;
 }
 
 .packages-header{
@@ -341,6 +342,182 @@ body {
     min-width: 75px;
     text-align: center;
     font-size: calc(1rem + 1vw);
+}
+
+/* Style for the overlay */
+body.popup-active::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--bg-color);  /* Semi-transparent black */
+    opacity: 80%;
+    pointer-events: none;            /* To not interfere with other interactions */
+    z-index: 999;                    /* Ensure it's below the popup but above everything else */
+}
+
+body.popup-active {
+    overflow: hidden;
+}
+
+/* Style for the popup */
+.packages-popup {
+    display: none;           /* Hidden by default */
+    position: fixed;         /* Fixed position */
+    top: 50%;                /* Adjust this for desired position */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;           /* Ensure it's above the overlay and other content */
+    background: transparent;       /* Background color for the popup */
+    padding: 20px;
+    border-radius: 10px;     /* Optional rounded corners */
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.packages-popup.visible {
+    display: flex;         /* Show and apply flex layout */
+}
+
+/* JavaScript will add the 'popup-active' class to the body when the popup is open */
+
+.tabs-container {
+	padding: 16px;
+    width: 75vw;
+    height: 500px;
+    display: flex;
+	margin: 10px;
+	border-radius: 16px;
+    background-color: var(--primary-color);
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;	
+}
+
+header {
+    position: relative;
+}
+
+.tab-content-wrapper {
+    overflow-y: hidden;
+    overflow-x: auto;
+    height: 450px;
+    transition: all 0.45s ease-in-out;
+    padding: 0 16px;
+}
+
+.tab-content h2 {
+    color: var(--bg-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.tab-content {
+    color: var(--bg-color);
+    font-size: 1.25rem;
+    height: 450px;
+    min-width: 300px;
+    overflow: hidden;
+    transition: all 0.45s ease-in-out;
+}
+
+.tab-content-list {
+    margin-top: 6px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-right: 16px;
+    gap: 8px;
+    padding-left: 0;
+}
+
+.tab-content-list li {
+    position: relative;
+    display: flex;
+    color: var(--bg-color);
+    text-align: left;
+    border-radius: 8px;
+    justify-content: start;
+    padding: 12px;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+}
+
+
+.container-left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid var(--bg-color);
+    list-style-type: none;
+    padding-right: 2vw;
+    gap: 8px;
+}
+
+.tabs {
+    margin: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-right: 16px;
+    padding-left: 0;
+    gap: 8px;
+}
+
+.contact-button {
+    margin-top: 100%;
+    background-color: var(--accent-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 2vh 1vw;
+    text-align: center;
+
+}
+
+.tabs a {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--bg-color);
+    text-align: left;
+    border-radius: 8px;
+    justify-content: start;
+    padding: 12px;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.tabs a img {
+    height: 20px;
+    width: 20px;
+}
+
+.tabs .active, .tabs a:hover {
+    font-weight: 700;
+    outline: none;
+    color: white;
+    background-color: var(--bg-color);
+}
+
+
+.tabs a i {
+    stroke: var(--bg-color);
+    font-size: 20px;
 }
 
 .packages-footer {
@@ -844,12 +1021,12 @@ a {
 
     .packages-cards {
         flex-direction: column;
-        width: 90vw;
+        width: 70vw;
         align-items: center;
         gap: 2vh;
     }
     .packages-card {
-        width: 80%;
+        width: 100%;
         margin: 0;
     }
 
@@ -1028,8 +1205,18 @@ a {
     
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .tab-content h2 {
+        font-size: 1.25rem;
+    }
+    
+    .tab-content {
+        font-size: 1rem;
+    }
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
     /* CSS rules for medium devices */
 
     .hero-diagram {
@@ -1058,4 +1245,21 @@ a {
     
 } 
 
+@media only screen and (min-width: 1439px){
+    .tab-content h2 {
+        font-size: 1.75rem;
+    }
+    
+    .tab-content {
+        font-size: 1.5rem;
+    }
+    
+    .tabs a{
+        font-size: 1.25rem;
+    }
+
+    .contact-button{
+        margin-top: 80%;
+    }
+}
 
